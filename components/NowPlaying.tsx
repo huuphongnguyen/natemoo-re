@@ -33,17 +33,17 @@ export const Player: React.FC<Props> = ({
               border-radius: 100px;
               background: linear-gradient(47deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
               border: 1px solid #e1e4e8;
-              animation: rotate 1.5s linear infinite;
+              -webkit-animation: rotation 2s infinite linear;
             }
 
-@keyframes rotate {
-  0% { 
-    transform: rotate(0); 
-  }
-  100% { 
-    transform: rotate(360deg);
-  }
- }
+            @-webkit-keyframes rotation {
+		          from {
+				        -webkit-transform: rotate(0deg);
+		          }
+		          to {
+				        -webkit-transform: rotate(359deg);
+		          }
+            }
 
             p {
               display: block;

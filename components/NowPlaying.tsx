@@ -30,19 +30,9 @@ export const Player: React.FC<Props> = ({
 
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-              border-radius: 100px;
+              border-radius: 8px;
               background: linear-gradient(47deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
               border: 1px solid #e1e4e8;
-              -webkit-animation: rotation 2s infinite linear;
-            }
-
-            @-webkit-keyframes rotation {
-		          from {
-				        -webkit-transform: rotate(0deg);
-		          }
-		          to {
-				        -webkit-transform: rotate(359deg);
-		          }
             }
 
             p {
@@ -69,7 +59,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-color: #24292e;
+              background-color: linear-gradient(47deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }

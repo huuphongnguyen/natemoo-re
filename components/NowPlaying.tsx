@@ -31,7 +31,7 @@ export const Player: React.FC<Props> = ({
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               border-radius: 6px;
-              background: #FFF;
+              background: linear-gradient(135deg, rgba(247, 107, 42, 1) 0%, rgba(235, 70, 101, 1) 100%);
               border: 1px solid #e1e4e8;
             }
 
@@ -134,7 +134,7 @@ export const Player: React.FC<Props> = ({
           paddingLeft: 4,
         }}
       >
-        <img id="cover" src={cover ?? "https://phong.vn/icon/spotify.svg"} width="48" height="48" />
+        <img id="cover" src={cover ?? null} width="48" height="48" />
         <div
           style={{
             display: "flex",

@@ -30,8 +30,8 @@ export const Player: React.FC<Props> = ({
 
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
-              border-radius: 6px;
-              background: linear-gradient(135deg, rgba(247, 107, 42, 1) 0%, rgba(235, 70, 101, 1) 100%);
+              border-radius: 8px;
+              background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
               border: 1px solid #e1e4e8;
             }
 

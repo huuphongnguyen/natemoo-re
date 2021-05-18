@@ -31,7 +31,7 @@ export const Player: React.FC<Props> = ({
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               border-radius: 8px;
-              background: #000000;
+              background: #ffffff;
               border: 1px solid #e1e4e8;
             }
 

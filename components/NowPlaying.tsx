@@ -31,7 +31,7 @@ export const Player: React.FC<Props> = ({
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               border-radius: 8px;
-              background-image: url("https://phong.vn/emoji/emoji-hello.png");
+              background-color: #ffffff;
               border: 1px solid #e1e4e8;
             }
 
@@ -134,7 +134,7 @@ export const Player: React.FC<Props> = ({
           paddingLeft: 4,
         }}
       >
-        <img id="cover" src={cover ?? "https://phong.vn/emoji/emoji-hello.png"} width="48" height="48" />
+        <img id="cover" src={cover ?? null} width="48" height="48" />
         <div
           style={{
             display: "flex",

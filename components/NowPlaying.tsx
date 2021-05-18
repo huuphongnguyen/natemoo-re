@@ -31,7 +31,7 @@ export const Player: React.FC<Props> = ({
             img:not([src]) {
               content: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
               border-radius: 8px;
-              background: #ffffff;
+              background-image: url("https://phong.vn/icons/twitter.svg");
               border: 1px solid #e1e4e8;
             }
 
@@ -59,7 +59,16 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-color: #605E9F;
+              background-color: linear-gradient(
+                110.78deg,
+                rgb(118, 230, 80) -1.13%,
+                rgb(249, 214, 73) 15.22%,
+                rgb(240, 142, 53) 32.09%,
+                rgb(236, 81, 87) 48.96%,
+                rgb(255, 24, 189) 67.94%,
+                rgb(26, 75, 255) 85.34%,
+                rgb(98, 216, 249) 99.57%
+          );
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }

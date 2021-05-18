@@ -59,7 +59,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background: #605E9F;
+              background-image: url("https://phong.vn/emoji/emoji-hello.png";
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }

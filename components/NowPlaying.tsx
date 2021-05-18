@@ -59,7 +59,7 @@ export const Player: React.FC<Props> = ({
               width: 100%;
               height: 6px;
               transform-origin: left center;
-              background-image: url("https://phong.vn/icons/twitter.svg");
+              background: #605E9F;
               animation: progress ${duration}ms linear;
               animation-delay: -${progress}ms;
             }
